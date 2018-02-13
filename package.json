@@ -11,10 +11,11 @@
     "test": "node test.js"
   },
   "dependencies": {
+    "request": "^2.81.0",
     "ejs": "^2.5.6",
     "express": "^4.15.2"
   },
-  "dependencies": {
+  "devDependencies": {
     "request": "^2.81.0",
     "tape": "^4.7.0"
   },
