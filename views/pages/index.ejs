@@ -85,6 +85,7 @@
                 <img class="img-container" src="<%= offers.Hotel[i].hotelInfo.hotelImageUrl %>"/>
             </td>
             <td>
+                Destination:<b><%= offers.Hotel[i].destination.shortName %></b><br/>
                 <b>Available from</b>:
                 <%= offers.Hotel[i].offerDateRange.travelStartDate[2] %>/<%= offers.Hotel[i].offerDateRange.travelStartDate[1] %>/<%= offers.Hotel[i].offerDateRange.travelStartDate[0] %>
                 <b>to:</b>
