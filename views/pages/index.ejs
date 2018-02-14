@@ -9,7 +9,7 @@
         .property-info-table {
             border-top: 1px solid grey;
             width: 100%;
-            max-width: 800px;
+            max-width: 900px;
         }
 
         .img-container {
@@ -45,10 +45,32 @@
             font-size: 1.10em;
         }
 
+        .search {
+            float: top;
+        }
+
     </style>
+    <script type="text/javascript">
+        function findPlace(theForm) {
+            return true;
+        }
+    </script>
 </head>
 
 <body>
+
+<div class="search">
+    <form action="#" onsubmit="return findPlace(this);">
+      I'm looking for a place near <input type="text" name="destinationName">
+      between <input type="date" name="minTripStartDate">
+      to <input type="date" name="maxTripStartDate">
+      for  <input type="number" name="lengthOfStay" min="1" max="21"> nights<br/>
+      <p></p>
+      <input type="submit" value="Let's go">
+      <p></p>
+    </form>
+
+</div>
 
 <% for(var i=0; i<offers.Hotel.length; i++) { %>
     <div>
@@ -82,6 +104,5 @@
         </table>
     </div>
 <% } %>
-
 </body>
 </html>
